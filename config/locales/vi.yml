@@ -1,0 +1,15 @@
+vi:
+  base_title: "Huong dan Ruby on Rails Sample App"
+
+  home:
+    title: "Trang Chu"
+    content: "Day la trang chu."
+
+  help:
+    title: "Tro Giup"
+    content: "Nhan tro giup Ruby on Rails Tutorial o trang"
+    content2: "De nhan tro giup ve sample app, doc sach huong dan"
+
+  links:
+    link_rails_desc: "Ruby on Rails Tutorial"
+    link_rails_help_desc: "Rails Tutorial help"
