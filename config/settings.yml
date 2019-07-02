@@ -4,3 +4,7 @@ links:
   link_rails_book: "https://www.railstutorial.org/book"
   link_author: "http://www.michaelhartl.com/"
   link_rails_news: "http://news.railstutorial.org/"
+name_length: 50
+email_length: 255
+pass_min_length: 6
+email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
