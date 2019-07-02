@@ -30,7 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  web_name: "Sample App"
   base_title: "Ruby on Rails Tutorial Sample App"
+  by: "by"
+  menu:
+    home: "Home"
+    help: "Help"
+    login: "Login"
+    about: "About"
+    contact: "Contact"
+
+  footer:
+    news: "News"
 
   home:
     title: "Home"
@@ -41,6 +52,11 @@ en:
     content: "Get help on the Ruby on Rails Tutorial at the page"
     content2: "To get help on this sample app, see the Tutorial book"
 
+  signup:
+    title: "Sign up"
+    desc: "This will be a signup page for new users."
+
   links:
+    link_sign_up: "Sign up now!!!"
     link_rails_desc: "Ruby on Rails Tutorial"
     link_rails_help_desc: "Rails Tutorial help"
