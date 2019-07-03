@@ -32,7 +32,12 @@
 en:
   web_name: "Sample App"
   base_title: "Ruby on Rails Tutorial Sample App"
+  welcome: "Welcome to the Sample App!"
   by: "by"
+  error: "error"
+  user:
+    not_found: "User Not Found"
+
   menu:
     home: "Home"
     help: "Help"
@@ -55,8 +60,15 @@ en:
   signup:
     title: "Sign up"
     desc: "This will be a signup page for new users."
+    confirm: "Confirmation"
 
   links:
     link_sign_up: "Sign up now!!!"
     link_rails_desc: "Ruby on Rails Tutorial"
     link_rails_help_desc: "Rails Tutorial help"
+
+  button:
+    create_acc: "Create my account"
+
+  form:
+    alert: "The form contains"
