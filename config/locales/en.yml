@@ -44,6 +44,12 @@ en:
     login: "Login"
     about: "About"
     contact: "Contact"
+    profile: "Profile"
+    users: "Users"
+    account: "Account"
+    settings: "Settings"
+    logout: "Log out"
+    login: "Log in"
 
   footer:
     news: "News"
@@ -62,6 +68,10 @@ en:
     desc: "This will be a signup page for new users."
     confirm: "Confirmation"
 
+  login:
+    title: "Log in"
+    new_user: "New user?"
+
   links:
     link_sign_up: "Sign up now!!!"
     link_rails_desc: "Ruby on Rails Tutorial"
@@ -72,3 +82,6 @@ en:
 
   form:
     alert: "The form contains"
+
+  alert:
+    login_fail: "Invalid email/password combination"
