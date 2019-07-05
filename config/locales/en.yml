@@ -35,8 +35,6 @@ en:
   welcome: "Welcome to the Sample App!"
   by: "by"
   error: "error"
-  user:
-    not_found: "User Not Found"
 
   menu:
     home: "Home"
@@ -78,11 +76,29 @@ en:
     link_rails_desc: "Ruby on Rails Tutorial"
     link_rails_help_desc: "Rails Tutorial help"
 
+  user:
+    edit:
+      title: "Edit user"
+      desc: "Update your profile"
+      confirm: "Confirmation"
+      change: "Change"
+    index:
+      title: "All users"
+    delete:
+      title: "Delete"
+    not_found: "User Not Found"
+
   button:
     create_acc: "Create my account"
+    save: "Save changes"
 
   form:
     alert: "The form contains"
 
   alert:
     login_fail: "Invalid email/password combination"
+    profile_update: "Profile updated"
+    require_login: "Please log in."
+    user_del: "User deleted."
+    user_del_fail: "Failed to delete user"
+    confirm_del: "You sure?"

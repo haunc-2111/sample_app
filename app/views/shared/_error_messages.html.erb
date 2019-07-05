@@ -2,7 +2,7 @@
   <div id="error_explanation">
     <div class="alert alert-danger">
       <%= t "form.alert" %>
-      <%= pluralize(@user.errors.count, t "error") %>
+      <%= pluralize @user.errors.count, t("error") %>
     </div>
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
