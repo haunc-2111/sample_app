@@ -71,6 +71,7 @@ en:
   login:
     title: "Log in"
     new_user: "New user?"
+    remember_me: "Remember me on this computer"
 
   links:
     link_sign_up: "Sign up now!!!"
