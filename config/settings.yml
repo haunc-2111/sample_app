@@ -4,6 +4,8 @@ links:
   link_rails_book: "https://www.railstutorial.org/book"
   link_author: "http://www.michaelhartl.com/"
   link_rails_news: "http://news.railstutorial.org/"
+  link_gravatar: "http://gravatar.com/emails"
+users_per_page: 5
 avatar_size: 50
 avatar_size_show: 100
 name_length: 50
