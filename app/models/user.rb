@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.email_regex
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save {email.downcase!}
   before_create :create_activation_digest
@@ -12,6 +12,10 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: Settings.pass_min_length }
 
   has_secure_password
+
+  def password_reset_expired?
+    reset_sent_time < Settings.expired_time.hours.ago
+  end
 
   def active
     update activated: true, activated_at: Time.zone.now
@@ -34,6 +38,15 @@ class User < ApplicationRecord
 
   def forget
     update remember_digest: nil
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_sent_time: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
   end
 
   class << self
