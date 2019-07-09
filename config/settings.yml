@@ -12,3 +12,4 @@ name_length: 50
 email_length: 255
 pass_min_length: 6
 email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+expired_time: 2
