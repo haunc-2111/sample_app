@@ -95,6 +95,14 @@ en:
   form:
     alert: "The form contains"
 
+  mailer:
+    greeting: "Hi"
+    activation:
+      home_info: "Please check your email to activate your account."
+      subject: "Account activation"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link: "Activate"
+
   alert:
     login_fail: "Invalid email/password combination"
     profile_update: "Profile updated"
@@ -102,3 +110,6 @@ en:
     user_del: "User deleted."
     user_del_fail: "Failed to delete user"
     confirm_del: "You sure?"
+    acc_activate: "Account activated!"
+    acc_not_activate: "Account not activated. Check your email for the activation link."
+    invalid_active_link: "Invalid activation link"

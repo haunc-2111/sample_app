@@ -2,8 +2,6 @@
 <h1><%= t "user.index.title" %></h1>
 <%= paginate @users, theme: "twitter-bootstrap-3" %>
 <ul class="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-  <% end %>
+  <%= render @users %>
 </ul>
 <%= paginate @users, theme: "twitter-bootstrap-3" %>
