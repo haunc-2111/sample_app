@@ -1,11 +1,28 @@
 <% provide :title, t("home.title") %>
-<div class = "center jumbotron">
-  <h1><%= t "home.title" %></h1>
-  <p>
-    <%= t "home.content" %>
-    <%= link_to t("links.link_rails_desc"), Settings.links.link_rails %>
-  </p>
-  <%= link_to t("links.link_sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag("rails.png", alt: "Rails logo"), Settings.links.link_rails %>
-<%= link_to image_tag("kitten.jpg", alt: "Kitten"), Settings.links.link_rails %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t "micropost.feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class = "center jumbotron">
+    <h1><%= t "home.title" %></h1>
+    <p>
+      <%= t "home.content" %>
+      <%= link_to t("links.link_rails_desc"), Settings.links.link_rails %>
+    </p>
+    <%= link_to t("links.link_sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("rails.png", alt: "Rails logo"), Settings.links.link_rails %>
+  <%= link_to image_tag("kitten.jpg", alt: "Kitten"), Settings.links.link_rails %>
+<% end %>

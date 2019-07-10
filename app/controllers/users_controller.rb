@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def show
     redirect_to root_path unless @user.activated?
+    @microposts = @user.microposts.lastest.page(params[:page]).per Settings.posts_per_page
   end
 
   def create

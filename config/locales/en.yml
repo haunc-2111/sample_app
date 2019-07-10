@@ -76,6 +76,7 @@ en:
     link_rails_desc: "Ruby on Rails Tutorial"
     link_rails_help_desc: "Rails Tutorial help"
     link_forgot_pass: "(Forgot password)"
+    link_view_profile: "view my profile"
 
   forgot_pass:
     title: "Forgot password"
@@ -96,11 +97,22 @@ en:
     not_found: "User Not Found"
     _invalid: "User invalid"
 
+  micropost:
+    title: Micropost
+    posted: "Posted"
+    ago: "ago"
+    placeholder: "Compose new micropost..."
+    feed: "Micropost Feed"
+
+  label:
+    confirm: "Confirmation"
+
   button:
     create_acc: "Create my account"
     save: "Save changes"
     update_pass: "Update password"
     submit: "Submit"
+    post: "Post"
   form:
     alert: "The form contains"
 
@@ -133,3 +145,9 @@ en:
     pass_reset_expired: "Password reset has expired."
     pass_not_empty: "can't be empty"
     pass_reseted: "Password has been reset."
+    post_created: "Micropost created!"
+    post_error: "Micropost Error!"
+    post_deleted: "Micropost deleted"
+    post_deleted_fail: "Micropost deleted failed"
+    max_img_size: "should be less than 5MB"
+    max_img_size2: "Maximum file size is 5MB. Please choose a smaller file."
