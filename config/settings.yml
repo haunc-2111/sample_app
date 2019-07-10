@@ -6,6 +6,7 @@ links:
   link_rails_news: "http://news.railstutorial.org/"
   link_gravatar: "http://gravatar.com/emails"
 users_per_page: 5
+posts_per_page: 3
 avatar_size: 50
 avatar_size_show: 100
 name_length: 50
@@ -13,3 +14,5 @@ email_length: 255
 pass_min_length: 6
 email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
 expired_time: 2
+max_img_size: 5
+max_content: 140
