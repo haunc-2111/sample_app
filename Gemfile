@@ -23,6 +23,7 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "figaro"
 gem "carrierwave"
 gem "mini_magick"
+gem "i18n-js"
 
 group :development, :test do
   gem "sqlite3", "~> 1.4"

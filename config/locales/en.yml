@@ -36,6 +36,10 @@ en:
   by: "by"
   error: "error"
 
+  title:
+    following: "Following"
+    followers: "Followers"
+
   menu:
     home: "Home"
     help: "Help"
@@ -106,6 +110,8 @@ en:
 
   label:
     confirm: "Confirmation"
+    following: "following"
+    follower: "followers"
 
   button:
     create_acc: "Create my account"
@@ -113,6 +119,9 @@ en:
     update_pass: "Update password"
     submit: "Submit"
     post: "Post"
+    follow: "Follow"
+    unfollow: "Unfollow"
+
   form:
     alert: "The form contains"
 
@@ -151,3 +160,4 @@ en:
     post_deleted_fail: "Micropost deleted failed"
     max_img_size: "should be less than 5MB"
     max_img_size2: "Maximum file size is 5MB. Please choose a smaller file."
+    relation_not_found: "Relationship not found!!!"

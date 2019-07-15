@@ -8,6 +8,7 @@ links:
 users_per_page: 5
 posts_per_page: 3
 avatar_size: 50
+avatar_size_small: 30
 avatar_size_show: 100
 name_length: 50
 email_length: 255
